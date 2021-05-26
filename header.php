@@ -28,7 +28,7 @@
               foreach ($menu_items as $menu_item): ?>
 
 
-              <li><a href="<?php echo $menu_item["href"] ?>"><?php echo $menu_item["menu_item"] ?></a></li>
+              <li><a href="/first__plane.php?id=<?php echo $menu_item["id"] ?>"><?php echo $menu_item["menu_item"] ?></a></li>
               
               <?php endforeach; ?>
             </ul>

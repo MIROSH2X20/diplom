@@ -25,5 +25,15 @@ function get_menu_items_all(){
 }
 
 
+function get_article_by_id($id){
+
+  global $db;
+  $articles = $db->query("SELECT * FROM articles WHERE id = $id");
+  foreach ($articles as $article) {
+    return $article;
+  }
+
+}
+
 
 
